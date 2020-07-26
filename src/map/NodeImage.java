@@ -1,5 +1,7 @@
 package map;
 
+import main.AppImage;
+
 import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
@@ -12,21 +14,33 @@ public class NodeImage extends Widget {
     }
 
     Node node;
-    BufferedImage image;
+    AppImage image;
 
 
-    public void setImage(BufferedImage image){
+    public void setImage(AppImage image){
         this.image = image;
-        this.size.width  = image.getWidth();
-        this.size.height = image.getHeight();
+        this.recalculateSize();
         this.view.repaint();
     }
 
 
+    public void recalculateSize() {
+        if (this.image != null) {
+            this.size.width  = this.image.original.getWidth();
+            this.size.height = this.image.original.getHeight();
+        }
+        else {
+            this.size.width  = 0;
+            this.size.height = 0;
+        }
+    }
+
 
     public void paint(Graphics2D graphics) {
         Rectangle bounds = this.calcBounds();
-        graphics.drawImage(this.image, bounds.x, bounds.y, null);
+        if (this.image != null) {
+            graphics.drawImage(this.image.original, bounds.x, bounds.y, null);
+        }
     }
 
     public void onClick(MouseEvent event) {
@@ -41,15 +55,15 @@ public class NodeImage extends Widget {
 
     }
 
-    public void keyPressed(KeyEvent event) {
-
+    public boolean keyPressed(KeyEvent event) {
+        return false;
     }
 
-    public void keyReleased(KeyEvent event) {
-
+    public boolean keyReleased(KeyEvent event) {
+        return false;
     }
 
-    public void keyTyped(KeyEvent event) {
-
+    public boolean keyTyped(KeyEvent event) {
+        return false;
     }
 }

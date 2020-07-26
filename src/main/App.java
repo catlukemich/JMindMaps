@@ -11,6 +11,8 @@ import java.awt.image.BufferedImage;
 
 public class App extends JFrame {
 
+    static public App instance;
+
     public static void main(String[] args) {
         try {
             UIManager.setLookAndFeel(
@@ -26,8 +28,9 @@ public class App extends JFrame {
             e.printStackTrace();
         }
 
-        App main = new App();
-        main.start();
+        App app = new App();
+        instance = app;
+        app.start();
     }
 
 
@@ -37,6 +40,8 @@ public class App extends JFrame {
 
 
     public void start() {
+        ImageRepository.readRepository();
+
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setVisible(true);
 
@@ -51,15 +56,18 @@ public class App extends JFrame {
         Globals.graphics = (Graphics2D) this.map_view.getGraphics();
 
 
-        this.buttons_panel = new ButtonPanel();
-        content_pane.add(this.buttons_panel, BorderLayout.LINE_END);
+        this.side_panel = new SidePanel();
+        content_pane.add(this.side_panel, BorderLayout.LINE_END);
+        this.side_panel.setMaximumSize(new Dimension(200, Integer.MAX_VALUE));
+
+
+        this.status_bar = new StatusBar();
+        content_pane.add(this.status_bar, BorderLayout.PAGE_END);
 
         Node node = new Node();
         this.map_view.addNode(node);
         BufferedImage image = Resources.loadImage("/building.png");
-        node.setImage(image);
-        node.setTitle("Helllo world, thi is me fucker");
-        node.setDescription("This might be the description which might be  be the description whspans on many lines, is editable and just works (hopefully)");
+        node.setTitle("Hello");
 
         this.map_view.repaint();
 
@@ -67,6 +75,7 @@ public class App extends JFrame {
     }
 
 
-    View map_view;
-    ButtonPanel buttons_panel;
+    public View map_view;
+    public SidePanel side_panel;
+    public StatusBar status_bar;
 }

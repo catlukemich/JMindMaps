@@ -1,5 +1,7 @@
 package map;
 
+import main.AppImage;
+import utils.Debug;
 import utils.MathUtils;
 
 import java.awt.*;
@@ -8,7 +10,7 @@ import java.awt.event.MouseEvent;
 import java.awt.geom.Rectangle2D;
 import java.awt.image.BufferedImage;
 
-public class Node extends Widget{
+public class Node extends Widget implements Focusable {
 
     static private int PADDING = 10;
     static private int SPACING = 10;
@@ -16,7 +18,10 @@ public class Node extends Widget{
     public Node() {
         this.node_image        = new NullNodeImage(this);
         this.title_entry       = new TitleEntry(this);
-        this.description_entry = new DescriptionEntry(this);
+        this.description_entry = new NullDescriptionEntry(this);
+        this.node_image.recalculateSize();
+        this.title_entry.recalculateSize();
+        this.description_entry.recalculateSize();
         this.recalculateSize();
         this.updatePositions();
     }
@@ -50,20 +55,79 @@ public class Node extends Widget{
         this.description_entry.setView(view);
     }
 
+
+    public View getView() {
+        return this.view;
+    }
+
     /// Setters and getters for node image, title and description ///
-    public void setImage(BufferedImage image) {
+
+    public void addImage() {
         this.node_image = new NodeImage(this);
         this.node_image.setView(this.view);
+        this.recalculateSize();
+    }
+
+
+
+    public void removeImage() {
+        this.node_image = new NullNodeImage(this);
+        this.node_image.setView(this.view);
+        this.recalculateSize();
+    }
+
+    public void setImage(AppImage image) {
         this.node_image.setImage(image);
+        this.node_image.recalculateSize();
         this.recalculateSize();
         this.updatePositions();
     }
+
+
+    public AppImage getImage() {
+        return this.node_image.image;
+    }
+
 
     public void setTitle(String title) {
         this.title_entry.setText(title);
         this.recalculateSize();
         this.updatePositions();
+    }
 
+
+    public String getTitle() {
+        return this.title_entry.text;
+    }
+
+
+    public boolean hasDescription() {
+        return !(this.description_entry instanceof NullDescriptionEntry);
+    }
+
+
+    public void addDescription() {
+        this.description_entry = new DescriptionEntry(this);
+        this.description_entry.setView(this.view);
+        this.description_entry.recalculateSize();
+        this.recalculateSize();
+        this.updatePositions();
+    }
+
+
+
+    public void removeDescription() {
+        this.description_entry = new NullDescriptionEntry(this);
+        this.description_entry.setView(this.view);
+        this.recalculateSize();
+        this.updatePositions();
+    }
+
+
+
+
+    public String getDescription() {
+        return this.description_entry.text;
     }
 
 
@@ -81,7 +145,7 @@ public class Node extends Widget{
     }
 
 
-    private void updatePositions() {
+    void updatePositions() {
         Point image_position = this.calcImagePosition();
         this.node_image.setPosition(image_position);
 
@@ -142,9 +206,13 @@ public class Node extends Widget{
     private int calcHeight() {
         int height = 0;
         height += this.node_image.getHeight();
-        height += SPACING;
+        if (!(this.node_image instanceof NullNodeImage)){
+            height += SPACING;
+        }
         height += this.title_entry.getHeight();
-        height += SPACING;
+        if (!(this.description_entry instanceof NullDescriptionEntry)) {
+            height += SPACING;
+        }
         height += this.description_entry.getHeight();
         return height;
     }
@@ -153,12 +221,15 @@ public class Node extends Widget{
     /// Event handlinge methods ///
     public void onClick(MouseEvent event) {
         Point mouse = new Point(event.getX(), event.getY());
+        this.focus_widget = null;
         if (this.title_entry.containsPoint(mouse)){
+            this.description_entry.loseFocus();
             this.title_entry.onClick(event);
             this.focus_widget = this.title_entry;
             this.title_entry.gainFocus();
         }
         else if (this.description_entry.containsPoint(mouse)){
+            this.title_entry.loseFocus();
             this.description_entry.onClick(event);
             this.focus_widget = this.description_entry;
             this.description_entry.gainFocus();
@@ -179,25 +250,39 @@ public class Node extends Widget{
     }
 
 
-
-    public void keyPressed(KeyEvent event) {
+    public boolean keyPressed(KeyEvent event) {
         if (this.focus_widget != null) {
             this.focus_widget.keyPressed(event);
+            return true;
         }
+        return false;
     }
 
 
-    public void keyReleased(KeyEvent event) {
+    public boolean keyReleased(KeyEvent event) {
         if (this.focus_widget != null) {
             this.focus_widget.keyReleased(event);
+            return true;
         }
+        return false;
     }
 
 
-    public void keyTyped(KeyEvent event) {
+    public boolean keyTyped(KeyEvent event) {
         if (this.focus_widget != null) {
             this.focus_widget.keyTyped(event);
+            return true;
         }
+        return false;
     }
+
+
+
+    public void onMouseOver(MouseEvent event) {
+    }
+
+    public void onMouseOut(MouseEvent event) {
+    }
+
 }
 

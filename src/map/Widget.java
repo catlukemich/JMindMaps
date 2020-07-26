@@ -43,8 +43,8 @@ abstract public class Widget {
     // The top-left corner is on the opposite side of the bottom-right corner
     // and the center is exactly between them.
     public Rectangle calcBounds() {
-        int x = this.view.map(this.position).x - this.size.width  / 2;
-        int y = this.view.map(this.position).y - this.size.height / 2;
+        int x = this.view.positionToScreen(this.position).x - this.size.width  / 2;
+        int y = this.view.positionToScreen(this.position).y - this.size.height / 2;
         int width = this.size.width;
         int height = this.size.height;
         return new Rectangle(x, y, width, height);
@@ -60,16 +60,35 @@ abstract public class Widget {
 
 
     /// Event handling methods ///
-    abstract public void onClick(MouseEvent event);
 
-    abstract public void gainFocus();
+    public void onMouseMove(MouseEvent event) {}
 
-    abstract public void loseFocus();
+    public void onMouseOver(MouseEvent event) {}
 
-    abstract public void keyPressed(KeyEvent event);
+    public void onMouseOut(MouseEvent event) {}
 
-    abstract public void keyReleased(KeyEvent event);
+    public void onMousePress(MouseEvent event) {}
 
-    abstract public void keyTyped(KeyEvent event);
+    public void onMouseRelease(MouseEvent event) {}
+
+    public void onClick(MouseEvent event) { }
+
+    public void gainFocus() {}
+
+    public void loseFocus() {}
+
+    // The return values of the following keyboard handling methods
+    // should indicate whether the event was consumed by the widget:
+    public boolean keyPressed(KeyEvent event) {
+        return false;
+    }
+
+    public boolean keyReleased(KeyEvent event) {
+        return false;
+    }
+
+    public boolean keyTyped(KeyEvent event) {
+        return false;
+    }
 
 }

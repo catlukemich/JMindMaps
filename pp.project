@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<project name="JMindMaps">
+    <languages>
+        <language>Java</language>
+    </languages>
+    <counts>
+        <count timestamp="1595242286" is_refactor="0" all_lines="1154" filled_lines="855" empty_lines="299"/>
+        <count timestamp="1595277815" is_refactor="0" all_lines="1450" filled_lines="1066" empty_lines="384"/>
+        <count timestamp="1595341844" is_refactor="0" all_lines="1514" filled_lines="1112" empty_lines="402"/>
+        <count timestamp="1595363437" is_refactor="0" all_lines="1856" filled_lines="1374" empty_lines="482"/>
+        <count timestamp="1595446242" is_refactor="0" all_lines="2013" filled_lines="1512" empty_lines="501"/>
+        <count timestamp="1595511602" is_refactor="0" all_lines="2164" filled_lines="1626" empty_lines="538"/>
+        <count timestamp="1595778899" is_refactor="0" all_lines="2752" filled_lines="2053" empty_lines="699"/>
+    </counts>
+</project>

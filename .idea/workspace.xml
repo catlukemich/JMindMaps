@@ -1,7 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd2fdc4b-4197-42cd-b6c1-318ce165503d" name="Default Changelist" comment="" />
+    <list default="true" id="bd2fdc4b-4197-42cd-b6c1-318ce165503d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pp.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/add_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/add_description_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/add_image_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/link_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/no_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/remove_description_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/remove_image_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/select_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/AppImage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ButtonsPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ImageRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/ImagesPanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/NodePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/SidePanel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/StatusBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/map/Button.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/map/Connection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/map/DescriptionButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/map/Focusable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/map/ImageButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/map/LinkButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/map/Mode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/map/NodeButtons.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/map/NullDescriptionEntry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/Debug.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/working/add_button.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/working/add_image.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/working/buttons.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/working/select_button.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/main/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/main/ButtonPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/DescriptionEntry$Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/DescriptionEntry$Line.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/DescriptionEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/DescriptionEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/Node.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/NodeImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/NodeImage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/NullNodeImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/NullNodeImage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/TitleEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/TitleEntry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/View$ViewBorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/View.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/Widget.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/Widget.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/utils/Resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/utils/Resources.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/ButtonPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/DescriptionEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/DescriptionEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/NodeImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/NodeImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/NullNodeImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/NullNodeImage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/TitleEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/TitleEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/View.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/Widget.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/Widget.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Resources.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,15 +66,27 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin File" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\JMindMaps\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1eoOClQ1ORfrH7SmMv2Nz8iMnli" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -26,8 +94,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/res" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/utils" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -35,10 +105,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JMindMaps\src\utils" />
       <recent name="D:\JMindMaps\res" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="main.App" />
       <module name="JMindMaps" />
@@ -46,6 +117,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ImageRepository" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.ImageRepository" />
+      <module name="JMindMaps" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ImageRepository" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -70,7 +159,20 @@
       <option name="presentableId" value="Default" />
       <updated>1594984353947</updated>
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <created>1595179925781</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595179925781</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="181" key="#Project_Structure" timestamp="1594984363365">
@@ -81,10 +183,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="414" y="177" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1594984406879" />
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1595161039344">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1595709232191">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595161039344" />
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595709232191" />
     <state x="689" y="309" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1594984405444">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -93,53 +195,61 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="711" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595003639899" />
-    <state width="1921" height="289" key="GridCell.Tab.0.bottom" timestamp="1595179545557">
+    <state x="627" y="120" key="CommitChangelistDialog2" timestamp="1595788616636">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595179545557" />
-    <state width="1921" height="289" key="GridCell.Tab.0.center" timestamp="1595179545557">
+    <state x="627" y="120" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595788616636" />
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom" timestamp="1595788616682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595179545557" />
-    <state width="1921" height="289" key="GridCell.Tab.0.left" timestamp="1595179545557">
+    <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595788616682" />
+    <state width="1877" height="256" key="GridCell.Tab.0.center" timestamp="1595788616682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595179545557" />
-    <state width="1921" height="289" key="GridCell.Tab.0.right" timestamp="1595179545557">
+    <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595788616682" />
+    <state width="1877" height="256" key="GridCell.Tab.0.left" timestamp="1595788616682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="289" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595179545557" />
-    <state width="1921" height="356" key="GridCell.Tab.1.bottom" timestamp="1595103069139">
+    <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595788616682" />
+    <state width="1877" height="256" key="GridCell.Tab.0.right" timestamp="1595788616682">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595103069139" />
-    <state width="1921" height="356" key="GridCell.Tab.1.center" timestamp="1595103069139">
+    <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595788616682" />
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1595704530539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595103069139" />
-    <state width="1921" height="356" key="GridCell.Tab.1.left" timestamp="1595103069139">
+    <state width="1877" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595704530539" />
+    <state width="1877" height="347" key="GridCell.Tab.1.center" timestamp="1595704530539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595103069139" />
-    <state width="1921" height="356" key="GridCell.Tab.1.right" timestamp="1595103069139">
+    <state width="1877" height="347" key="GridCell.Tab.1.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595704530539" />
+    <state width="1877" height="347" key="GridCell.Tab.1.left" timestamp="1595704530539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1921" height="356" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595103069139" />
-    <state x="605" y="252" width="710" height="536" key="find.popup" timestamp="1595161230312">
+    <state width="1877" height="347" key="GridCell.Tab.1.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595704530539" />
+    <state width="1877" height="347" key="GridCell.Tab.1.right" timestamp="1595704530539">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="605" y="252" width="710" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595161230312" />
-    <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1595099187874">
+    <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595704530539" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1595179962615">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595099187874" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1595098366967">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595179962615" />
+    <state x="605" y="252" width="710" height="536" key="find.popup" timestamp="1595778476363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595098366967" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595178270528">
+    <state x="605" y="252" width="710" height="536" key="find.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595778476363" />
+    <state x="601" y="246" width="700" height="530" key="recent.locations.popup" timestamp="1595621020015">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595178270528" />
+    <state x="601" y="246" width="700" height="530" key="recent.locations.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595621020015" />
+    <state x="616" y="240" key="run.anything.popup" timestamp="1595436521085">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595436521085" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1595778456851">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595778456851" />
   </component>
 </project>

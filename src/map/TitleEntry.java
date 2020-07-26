@@ -1,5 +1,6 @@
 package map;
 
+import main.App;
 import main.Globals;
 
 import java.awt.*;
@@ -13,7 +14,8 @@ public class TitleEntry extends Widget {
 
     public TitleEntry(Node node) {
         this.node = node;
-        this.font = new Font("Arial", 0, 50);
+        this.font = new Font("Arial", 0, 18);
+        this.text = "";
     }
 
     Node node;
@@ -42,8 +44,7 @@ public class TitleEntry extends Widget {
         // Draw the caret if this entry has focus:
         if (this.has_focus) {
             Point caret_position = this.getCaretPosition();
-            graphics.drawRect(caret_position.x, caret_position.y, 2, this.getStringHeight(this.text));
-            System.out.println(caret_position);
+            graphics.drawRect(caret_position.x, caret_position.y, 1, this.getStringHeight(this.text));
         }
     }
 
@@ -55,7 +56,7 @@ public class TitleEntry extends Widget {
     }
 
 
-    private void recalculateSize() {
+    public void recalculateSize() {
         int width  = this.getStringWidth(this.text);
         int height = this.getStringHeight(this.text);
         width = Math.max(width, getStringWidth(TITLE));
@@ -82,6 +83,7 @@ public class TitleEntry extends Widget {
     public void onClick(MouseEvent event) {
         Point mouse = new Point(event.getX(), event.getY());
         this.caret_index = this.getCaretIndex(mouse);
+        this.view.repaint();
     }
 
     public void gainFocus() {
@@ -93,8 +95,7 @@ public class TitleEntry extends Widget {
     }
 
 
-    public void keyPressed(KeyEvent event) {
-        System.out.println(event.getKeyCode());
+    public boolean keyPressed(KeyEvent event) {
         if (event.getKeyCode() == 37) {
             // Left arrow was pressed:
             this.caret_index -= 1;
@@ -129,19 +130,24 @@ public class TitleEntry extends Widget {
             this.setText(new_text);
         }
 
-
         if (this.caret_index < 0) this.caret_index = 0;
         if (this.caret_index > this.text.length()) this.caret_index = this.text.length();
 
+        // At this point the node panel node is set to the current node, so we can call to update the current state:
+        App.instance.side_panel.updateNodePanel();
+
+        return true;
     }
 
 
-    public void keyReleased(KeyEvent event) {}
+    public boolean keyReleased(KeyEvent event) {
+        return true;
+    }
 
 
-    public void keyTyped(KeyEvent event) {
+    public boolean keyTyped(KeyEvent event) {
         char character = event.getKeyChar();
-        if (!Character.isAlphabetic(character)) return;
+        if (!Character.isAlphabetic(character)) return false;
         String string_before = this.text.substring(0, this.caret_index);
         String string_after  = this.text.substring(this.caret_index);
         String new_text = string_before + character + string_after;
@@ -150,6 +156,11 @@ public class TitleEntry extends Widget {
 
         if (this.caret_index < 0) this.caret_index = 0;
         if (this.caret_index > this.text.length()) this.caret_index = this.text.length();
+
+        // At this point the node panel node is set to the current node, so we can call to update the current state:
+        App.instance.side_panel.updateNodePanel();
+
+        return true;
     }
 
 
@@ -176,16 +187,15 @@ public class TitleEntry extends Widget {
         while(true) {
             String character = String.valueOf(this.text.charAt(caret_index));
             int character_width = this.getStringWidth(character);
-//            String character_after  = String.valueOf(this.text.charAt(caret_index + 1));
             current_width += character_width ;
-            if (current_width - character_width / 2 > position.x) break;
+            if (current_width - character_width / 2 > position.x) return caret_index;;
             caret_index += 1;
 
+            // If we are beyond the string return what's left:
             if (caret_index == this.text.length()) {
                 return caret_index;
             }
         }
-        return caret_index;
     }
 
 
