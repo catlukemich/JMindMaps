@@ -1,6 +1,7 @@
 package main;
 
 import java.awt.image.BufferedImage;
+import java.io.File;
 
 
 // App image allows usage of original sized images and scaled down
@@ -8,13 +9,13 @@ import java.awt.image.BufferedImage;
 // side panel node frame.
 public class AppImage {
 
-    public AppImage(String path, BufferedImage original, BufferedImage scaled) {
-        this.path = path;
+    public AppImage(File file, BufferedImage original, BufferedImage scaled) {
+        this.file = file;
         this.original = original;
         this.scaled   = scaled;
     }
 
-    String path;
+    File file;
     final public BufferedImage original;
     final public BufferedImage scaled;
 }

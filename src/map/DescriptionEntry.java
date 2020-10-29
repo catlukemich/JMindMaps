@@ -2,7 +2,6 @@ package map;
 
 import main.App;
 import main.Globals;
-import utils.MathUtils;
 
 import java.awt.*;
 import java.awt.event.KeyEvent;
@@ -223,6 +222,7 @@ public class DescriptionEntry extends Widget {
 
         // At this point the node panel node is set to the current node, so we can call to update the current state:
         App.instance.side_panel.updateNodePanel();
+        App.instance.map_view.buttons_menu.updatePositions();
 
         return true;
     }
@@ -242,6 +242,7 @@ public class DescriptionEntry extends Widget {
 
         // At this point the node panel node is set to the current node, so we can call to update the current state:
         App.instance.side_panel.updateNodePanel();
+        App.instance.map_view.buttons_menu.updatePositions();
 
         return true;
     }

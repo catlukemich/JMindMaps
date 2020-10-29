@@ -13,9 +13,10 @@ import java.io.InputStream;
 public class Resources {
 
     static public AppImage loadAppImage(String path) {
-        BufferedImage original = loadImage(new File(path));
+        File file = new File(path);
+        BufferedImage original = loadImage(file);
         BufferedImage scaled = scaleImage(original, 200, 400);
-        return new AppImage(path, original, scaled);
+        return new AppImage(file, original, scaled);
     }
 
 
@@ -25,8 +26,8 @@ public class Resources {
             return image;
         } catch (IOException e) {
             e.printStackTrace();
+            throw new RuntimeException("Can't load file image: " + file.getAbsolutePath());
         }
-        return null;
     }
 
 
@@ -37,9 +38,8 @@ public class Resources {
             return image;
         } catch (IOException e) {
             System.out.println("Can't load image: \"" + path + "\"");
-            e.printStackTrace();
+            throw new RuntimeException(e);
         }
-        return null;
     }
 
 

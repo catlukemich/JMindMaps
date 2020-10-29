@@ -147,7 +147,7 @@ public class TitleEntry extends Widget {
 
     public boolean keyTyped(KeyEvent event) {
         char character = event.getKeyChar();
-        if (!Character.isAlphabetic(character)) return false;
+        if (!this.characterCanBeEntered(character)) return false;
         String string_before = this.text.substring(0, this.caret_index);
         String string_after  = this.text.substring(this.caret_index);
         String new_text = string_before + character + string_after;
@@ -163,6 +163,10 @@ public class TitleEntry extends Widget {
         return true;
     }
 
+
+    private boolean characterCanBeEntered(char character) {
+        return Character.isAlphabetic(character) || Character.isDigit(character) || character == '.' || character == ',' || character == '-';
+    }
 
 
     private Point getCaretPosition() {

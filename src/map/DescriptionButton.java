@@ -1,7 +1,6 @@
 package map;
 
 import main.App;
-import utils.Debug;
 import utils.Resources;
 
 import java.awt.event.MouseEvent;
@@ -13,7 +12,7 @@ public class DescriptionButton extends Button {
     static private BufferedImage remove_description_image = Resources.loadImage("/remove_description_button.png");
 
 
-    public DescriptionButton(NodeButtons buttons) {
+    public DescriptionButton(NodeMenu buttons) {
         super(buttons, add_description_image);
     }
 
@@ -29,5 +28,17 @@ public class DescriptionButton extends Button {
         }
 
         App.instance.side_panel.updateNodePanel();
+        this.update();
     }
+
+
+    public void update() {
+        if(!this.buttons.node.hasDescription()) {
+            this.setImage(add_description_image);
+        }
+        else {
+            this.setImage(remove_description_image);
+        }
+    }
+
 }

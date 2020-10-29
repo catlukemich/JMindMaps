@@ -10,7 +10,7 @@ public class LinkButton extends Button {
     static private BufferedImage link_image = Resources.loadImage("/link_button.png");
 
 
-    public LinkButton(NodeButtons buttons) {
+    public LinkButton(NodeMenu buttons) {
         super(buttons, link_image);
     }
 
@@ -19,14 +19,14 @@ public class LinkButton extends Button {
         super.onMousePress(event);
         View view = this.buttons.node.view;
         Node start_node = this.buttons.node;
-        view.setStartNode(start_node);
+        view.linking_state.setStartNode(start_node);
     }
 
 
     public void onMouseRelease(MouseEvent event) {
         super.onMouseRelease(event);
         View view = this.buttons.node.view;
-        view.setStartNode(null);
+        view.linking_state.setStartNode(null);
     }
 
 

@@ -1,19 +1,18 @@
 package map;
 
 import java.awt.*;
-import java.awt.event.KeyEvent;
 import java.awt.event.MouseEvent;
 import java.awt.image.BufferedImage;
 
 public class Button extends Widget {
 
-    public Button(NodeButtons buttons, BufferedImage image) {
+    public Button(NodeMenu buttons, BufferedImage image) {
         this.image = image;
         this.buttons = buttons;
         this.recalculateSize();
     }
 
-    NodeButtons buttons;
+    NodeMenu buttons;
     BufferedImage image;
 
     boolean is_pressed = false;

@@ -30,6 +30,8 @@ public class Node extends Widget implements Focusable {
     TitleEntry       title_entry;
     DescriptionEntry description_entry;
 
+    boolean has_focus;
+    boolean is_selected;
     Widget focus_widget;
 
 
@@ -39,7 +41,12 @@ public class Node extends Widget implements Focusable {
         Rectangle rectangle = this.calcBounds();
         graphics.setColor(new Color(250, 250, 250));
         graphics.fillRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
-        graphics.setColor(Color.GRAY);
+        if (this.is_selected) {
+            graphics.setColor(Color.RED);
+        }
+        else {
+            graphics.setColor(Color.GRAY);
+        }
         graphics.drawRect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
 
         this.node_image.paint(graphics);
@@ -101,6 +108,11 @@ public class Node extends Widget implements Focusable {
     }
 
 
+    public void setSelected(boolean selected) {
+        this.is_selected = selected;
+    }
+
+
     public boolean hasDescription() {
         return !(this.description_entry instanceof NullDescriptionEntry);
     }
@@ -145,7 +157,7 @@ public class Node extends Widget implements Focusable {
     }
 
 
-    void updatePositions() {
+    public void updatePositions() {
         Point image_position = this.calcImagePosition();
         this.node_image.setPosition(image_position);
 
@@ -234,19 +246,31 @@ public class Node extends Widget implements Focusable {
             this.focus_widget = this.description_entry;
             this.description_entry.gainFocus();
         }
-
+        else {
+            this.title_entry.loseFocus();
+            this.description_entry.loseFocus();
+        }
         this.view.repaint();
     }
 
 
-    public void gainFocus() {
 
+    public void focusOnTitleEntry() {
+        this.description_entry.loseFocus();
+        this.title_entry.gainFocus();
+        this.focus_widget = this.title_entry;
+    }
+
+
+    public void gainFocus() {
+        this.has_focus = true;
     }
 
 
     public void loseFocus() {
         this.title_entry.loseFocus();
         this.description_entry.loseFocus();
+        this.has_focus = false;
     }
 
 
@@ -284,5 +308,10 @@ public class Node extends Widget implements Focusable {
     public void onMouseOut(MouseEvent event) {
     }
 
+
+    public String toString() {
+        if (this.getTitle().isEmpty()) return "<NODE>";
+        else return this.getTitle();
+    }
 }
 

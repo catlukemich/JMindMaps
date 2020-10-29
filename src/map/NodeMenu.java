@@ -5,13 +5,13 @@ import utils.MathUtils;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 
-public class NodeButtons extends Widget {
+public class NodeMenu extends Widget {
 
     static private int PADDING = 10;
     static private int SPACING = 4;
 
 
-    public NodeButtons () {
+    public NodeMenu() {
         this.add_remove_image_button = new ImageButton(this);
         this.link_button = new LinkButton(this);
         this.add_remove_description_button = new DescriptionButton(this);
@@ -23,7 +23,7 @@ public class NodeButtons extends Widget {
 
     ImageButton add_remove_image_button;
     LinkButton link_button;
-    map.DescriptionButton add_remove_description_button;
+    DescriptionButton add_remove_description_button;
 
     Widget hover_widget;
 
@@ -50,7 +50,15 @@ public class NodeButtons extends Widget {
         this.recalculateSize();
         this.updatePosition();
         this.updateButtonsPositions();
+        this.update();
     }
+
+
+    public void update() {
+        this.add_remove_image_button.update();
+        this.add_remove_description_button.update();
+    }
+
 
     public Node getNode() {
         return this.node;
