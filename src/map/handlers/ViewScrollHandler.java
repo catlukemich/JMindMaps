@@ -5,7 +5,7 @@ import map.View;
 import java.awt.*;
 import java.awt.event.MouseEvent;
 
-public class ViewDragHandler {
+public class ViewScrollHandler {
 
     private boolean is_scrolling;
     Point drag_point;

@@ -87,7 +87,8 @@ public class App extends JFrame {
 
         this.map_view.repaint();
 
-        this.setSize(800, 600);
+        this.setSize(1200, 900);
+        this.setExtendedState(this.getExtendedState()|JFrame.MAXIMIZED_BOTH );
     }
 
 }

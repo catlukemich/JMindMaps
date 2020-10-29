@@ -2,6 +2,7 @@ package map.handlers;
 
 import main.App;
 import main.commands.NewConnectionCommand;
+import main.commands.NewNodeCommand;
 import map.Connection;
 import map.Node;
 import map.View;
@@ -80,9 +81,15 @@ public class NodeLinkingHandler {
 
             if (distance > View.NEW_NODE_DISTANCE) {
                 Node node = view.insertNewNode(current_position);
+
+                App.instance.history.addCommand(new NewNodeCommand(node));
+
                 // Add the connection:
                 Connection connection = new Connection(view.linking_state.link_start_node, node);
                 connection.setView(view);
+
+                App.instance.history.addCommand(new NewConnectionCommand(connection));
+
                 model.addConnection(connection);
                 view.setSelectedNode(node, true);
                 if (view.focus_state.focus_object != null) view.focus_state.focus_object.loseFocus();
@@ -92,6 +99,8 @@ public class NodeLinkingHandler {
 
                 // Update the nodes panel with new node:
                 App.instance.side_panel.updateNodesPanel();
+
+                view.linking_state.link_start_node = null;
             }
         }
     }

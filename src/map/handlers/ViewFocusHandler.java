@@ -89,6 +89,7 @@ public class ViewFocusHandler {
 
         // Update the nodes panel with new node:
         App.instance.side_panel.updateNodesPanel();
+        view.repaint();
     }
 
     public void focusGained(View view, FocusEvent e) {
