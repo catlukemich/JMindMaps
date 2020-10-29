@@ -2,71 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bd2fdc4b-4197-42cd-b6c1-318ce165503d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/History.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/MenuBar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/NodesPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/commands/ImageChangeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/commands/NewConnectionCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/commands/NewNodeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/commands/NodeDragCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/commands/RemoveConnectionCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/commands/RemoveNodeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/AutoScroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/ButtonScroller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/FocusState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/HoverState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/LinkingState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/NodeDragState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/PositionState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/ViewDrawer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/ViewModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/handlers/ConnectionHoverHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/handlers/NodeDragHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/handlers/NodeLinkingHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/handlers/NodeMenuHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/handlers/NodeSelectionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/handlers/ViewDragHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/handlers/ViewFocusHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/map/handlers/ViewKeyHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/main/AppImage.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/main/AppImage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/main/ImageRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/main/ImageRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/main/ImagesPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/main/ImagesPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/main/NodePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/main/NodePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/main/SidePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/main/SidePanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/Button.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/Button.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/DescriptionButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/DescriptionButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/DescriptionEntry$Line.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/DescriptionEntry$Line.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/DescriptionEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/DescriptionEntry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/ImageButton$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/ImageButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/ImageButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/LinkButton.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/LinkButton.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/NodeButtons.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/TitleEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/TitleEntry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/map/View.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/map/View.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/utils/MathUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/utils/MathUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JMindMaps/utils/Resources.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JMindMaps/utils/Resources.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pp.project" beforeDir="false" afterPath="$PROJECT_DIR$/pp.project" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AppImage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AppImage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ImageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ImageRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/ImagesPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/ImagesPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/NodePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/NodePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/SidePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/SidePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/DescriptionButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/DescriptionButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/DescriptionEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/DescriptionEntry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/ImageButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/ImageButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/LinkButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/LinkButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/NodeButtons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/NodeMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/map/TitleEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/TitleEntry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/map/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/View.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/MathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/MathUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/Resources.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/Resources.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/handlers/NodeLinkingHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/handlers/NodeLinkingHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/map/handlers/ViewDragHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/map/handlers/ViewScrollHandler.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,43 +128,59 @@
       <option name="project" value="LOCAL" />
       <updated>1595788652764</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Refactored View code so it's behaviours are in separate classess.&#10;- Implemented undo and redo for basic operations">
+      <created>1603984617598</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603984617598</updated>
+    </task>
+    <task id="LOCAL-00004" summary="- Created readme.md with a short overview and user guide.">
+      <created>1603985590383</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603985590383</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Things done:&#10;- Node editor&#10;- Image choosing and writing to repository&#10;- Node panel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Things done:&#10;- Node editor&#10;- Image choosing and writing to repository&#10;- Node panel" />
+    <MESSAGE value="- Refactored View code so it's behaviours are in separate classess.&#10;- Implemented undo and redo for basic operations" />
+    <MESSAGE value="- Created readme.md with a short overview and user guide." />
+    <option name="LAST_COMMIT_MESSAGE" value="- Created readme.md with a short overview and user guide." />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1603976667606">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603976667606" />
-    <state x="627" y="120" key="CommitChangelistDialog2" timestamp="1595788652141">
+    <state x="627" y="120" key="CommitChangelistDialog2" timestamp="1603988385447">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="627" y="120" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1595788652141" />
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1603977885761">
+    <state x="627" y="120" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603988385447" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom" timestamp="1603988328416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603977885761" />
+    <state width="1877" height="183" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603988328416" />
     <state width="1877" height="256" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1595878828651" />
-    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1603977885761">
+    <state width="1877" height="183" key="GridCell.Tab.0.center" timestamp="1603988328415">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603977885761" />
+    <state width="1877" height="183" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603988328415" />
     <state width="1877" height="256" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1595878828650" />
-    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1603977885760">
+    <state width="1877" height="183" key="GridCell.Tab.0.left" timestamp="1603988328415">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603977885760" />
+    <state width="1877" height="183" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603988328415" />
     <state width="1877" height="256" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1595878828650" />
-    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1603977885761">
+    <state width="1877" height="183" key="GridCell.Tab.0.right" timestamp="1603988328416">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603977885761" />
+    <state width="1877" height="183" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603988328416" />
     <state width="1877" height="256" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1595878828650" />
     <state width="1877" height="347" key="GridCell.Tab.1.bottom" timestamp="1603976945809">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -240,10 +198,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1877" height="347" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603976945809" />
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1603984547417">
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2" timestamp="1603985601518">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603984547417" />
+    <state x="552" y="255" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1603985601518" />
     <state x="605" y="252" width="710" height="536" key="find.popup" timestamp="1595778476363">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

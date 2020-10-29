@@ -34,7 +34,7 @@ public class View extends JPanel implements MouseMotionListener, MouseListener, 
 
     private ViewModel model = new ViewModel();
 
-    private ViewDragHandler         drag_handler = new ViewDragHandler();
+    private ViewScrollHandler drag_handler = new ViewScrollHandler();
     private NodeMenuHandler         node_menu_handler = new NodeMenuHandler();
     private ConnectionHoverHandler  connection_hover_handler = new ConnectionHoverHandler();
     private NodeDragHandler         node_drag_handler = new NodeDragHandler();
